@@ -214,7 +214,11 @@ bot.on('ready' , function(){
 
     goodBotScore = bot.saveData["good bot score"].score;
     console.log("Bot successfully compiled");
-    var botTesting = bot.channels.get("511091327618908181");
+    var botTesting = bot.channels.get("511091327618908181"); //bot testing channel for Where They server
+    if(botTesting == null)
+    {
+        botTesting = bot.channels.get("528057227463098389");
+    }
     botTesting.send("Online and ready to work!");
 })
 
