@@ -228,3 +228,4 @@ bot.on("guildMemberAdd", function(member){
 });
 
 bot.login(bot.config["TOKEN"].TOKEN);
+
