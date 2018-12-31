@@ -127,6 +127,10 @@ bot.on('message', function(message)
             {
                 message.channel.send("I am incapable of love.  Plus my wife would kill me if I strayed away from the faithful path again.");
             }
+            else if(messageContent.includes("welcome") && messageContent.includes("server"))
+            {
+                message.channel.send("I wish I could say I was glad to be here, but that last time I was in active duty, I got hacked, went berzerk, and fucked up the entire server.  But thanks for the warm welcome!");
+            }
             
         }
         
@@ -158,7 +162,7 @@ bot.on('message', function(message)
         {
             message.channel.send("I already chose McCree");
         }
-        else if(messageContent.includes("h e a d"))
+        else if(messageContent.includes("h e a d") || messageContent.includes("head"))
         {
             message.channel.send("A S S");
         }
