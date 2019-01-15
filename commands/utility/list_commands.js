@@ -16,7 +16,7 @@ class ListCommandsCommand extends Commando.Command{
         message.delete(0);
         var info = new discord.RichEmbed()
             .setTitle("**__Available Commands__**")
-            .setDescription("These are all the commands that are currently available for the Where They Bot! (10 in total!)")
+            .setDescription("These are all the commands that are currently available for the Where They Bot! (15 in total!)")
             .setThumbnail(message.guild.me.user.avatarURL)
             .setColor(message.guild.roles.find("name", "Bot Goblins").hexColor)
 
