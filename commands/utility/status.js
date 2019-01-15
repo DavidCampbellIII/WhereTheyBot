@@ -28,7 +28,7 @@ class StatusCommand extends Commando.Command{
         {
             minutes %= 60;
         }
-        message.channel.send("I have been active and running for " + hours + "h " + minutes + "m " + seconds + "s!");
+        message.channel.send("I have been active and running for " + hours + "h " + minutes + "m " + seconds + "s since the last shutdown/update!");
     }
 }
 
