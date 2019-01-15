@@ -25,6 +25,7 @@ class ListCommandsCommand extends Commando.Command{
             .addField("*!greetcris*", "Say hi to Cris!")
             .addField("*!greetcrystal*", "Say hi to Crystal!")
             .addField("*!greetdavid*", "Say hi to David III!")
+            .addField("*!greetdavid*", "Say hi to Gage!")
             .addField("*!greetjake*", "Say hi to Jake!")
             .addField("*!greetmitch*", "Say hi to our favorite pal Morch!")
             .addField("*!greetshon*", "Say hi to Shon!")
