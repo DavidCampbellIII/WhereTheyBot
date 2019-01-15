@@ -16,7 +16,7 @@ class ListCommandsCommand extends Commando.Command{
         message.delete(0);
         var info = new discord.RichEmbed()
             .setTitle("**__Available Commands__**")
-            .setDescription("These are all the commands that are currently available for the Where They Bot! (15 in total!)")
+            .setDescription("These are all the commands that are currently available for the Where They Bot! (16 in total!)")
             .setThumbnail(message.guild.me.user.avatarURL)
             .setColor(message.guild.roles.find("name", "Bot Goblins").hexColor)
 
@@ -27,6 +27,7 @@ class ListCommandsCommand extends Commando.Command{
             .addField("*!greetdavid*", "Say hi to David III!")
             .addField("*!greetdavid*", "Say hi to Gage!")
             .addField("*!greetjake*", "Say hi to Jake!")
+            .addField("*!greetmitch*", "Say hi to Maverick!")
             .addField("*!greetmitch*", "Say hi to our favorite pal Morch!")
             .addField("*!greetshon*", "Say hi to Shon!")
             .addField("*!greetsimon*", "Say hi to Simon!")
