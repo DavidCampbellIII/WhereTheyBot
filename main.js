@@ -146,21 +146,29 @@ bot.on('message', function(message)
         {
             message.channel.send("I'm already Tracer");
         }
-        else if(messageContent.includes("what about widowmaker"))
+        else if(messageContent.includes("widowmaker"))
         {
             message.channel.send("I'm already Widowmaker");
         }
-        else if(messageContent.includes("i wanna be winston"))
+        else if(messageContent.includes("winston"))
         {
             message.channel.send("I'm already Winston");
         }
-        else if(messageContent.includes("what about bastion"))
+        else if(messageContent.includes("bastion"))
         {
             message.channel.send("NERF BASTION!");
         }
-        else if(messageContent.includes("maybe ill choose mcree"))
+        else if(messageContent.includes("mcree"))
         {
             message.channel.send("I already chose McCree");
+        }
+        else if(messageContent.includes("genji"))
+        {
+            message.channel.send("I'm already Genji");
+        }
+        else if(messageContent.includes("i have an idea"))
+        {
+            message.channel.send("What's your idea?");
         }
         else if(messageContent.includes("h e a d") || messageContent.includes("head"))
         {
