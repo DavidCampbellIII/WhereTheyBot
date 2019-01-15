@@ -158,7 +158,7 @@ bot.on('message', function(message)
         {
             message.channel.send("NERF BASTION!");
         }
-        else if(messageContent.includes("mcree"))
+        else if(messageContent.includes("mcree") || messageContent.includes("mccree"))
         {
             message.channel.send("I already chose McCree");
         }
