@@ -15,8 +15,8 @@ class ListCommandsCommand extends Commando.Command{
     {
         message.delete(0);
         var info = new discord.RichEmbed()
-            .setTitle("**__Available Commands__**")
-            .setDescription("These are all the commands that are currently available for the Where They Bot! (15 in total!)")
+            .setTitle("**__Available Commands (1 of 2)__**")
+            .setDescription("These are all the commands that are currently available for the Where They Bot! (16 in total!)")
             .setThumbnail(message.guild.me.user.avatarURL)
             .setColor(message.guild.roles.find("name", "Bot Goblins").hexColor)
 
@@ -35,6 +35,17 @@ class ListCommandsCommand extends Commando.Command{
             .addField("*!pingr6*", "Ping everyone who typically plays Rainbow 6 Seige and ask them to play a game")
             .addField("*!pingr6ranked*", "Ping everyone who typically plays Rainbow 6 Seige and ask them to play a ranked game")
             .addBlankField()
+            .addField("**__FUN__**", "These commands are fun little things")
+            .addField("*!encode*", "Encode a message in David\'s special secret language")
+            .addBlankField()
+            .setFooter("If you have any questions about the Where They Bot, ask @DavidIII.  He is usually pretty happy to help.", message.guild.me.user.avatarURL)
+
+        var info2 = new discord.RichEmbed()
+            .setTitle("**__Available Commands (2 of 2)__**")
+            .setDescription("These are all the commands that are currently available for the Where They Bot! (16 in total!)")
+            .setThumbnail(message.guild.me.user.avatarURL)
+            .setColor(message.guild.roles.find("name", "Bot Goblins").hexColor)
+
             .addField("**__SIMPLE__**", "These commands are simple and unrelated to anything specific")
             .addField("*!flipcoin*", "Literally just flips a coin.  Nothing fancy")
             .addBlankField()
@@ -45,6 +56,7 @@ class ListCommandsCommand extends Commando.Command{
             .addBlankField()
             .setFooter("If you have any questions about the Where They Bot, ask @DavidIII.  He is usually pretty happy to help.", message.guild.me.user.avatarURL)
         message.channel.send(info);
+        message.channel.send(info2);
     }
 }
 
