@@ -56,7 +56,7 @@ class EncodeCommand extends Commando.Command{
             {
                 if(isLetter(messageContent.charAt(i + 1)))
                 {
-                    result += wordStart;
+                    result += messageContent.charAt(i) + wordStart;
                 }
                 else
                 {
