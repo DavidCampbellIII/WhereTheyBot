@@ -1,5 +1,5 @@
 const Commando = require('discord.js-commando');
-class GreetSimonCommand extends Commando.Command{
+class GreetShonCommand extends Commando.Command{
     constructor(client)
     {
         super(client,{
@@ -16,4 +16,4 @@ class GreetSimonCommand extends Commando.Command{
     }
 }
 
-module.exports = GreetSimonCommand;
+module.exports = GreetShonCommand;

@@ -20,4 +20,4 @@ class GreetGageCommand extends Commando.Command{
     }
 }
 
-module.exports = GreetAmandaCommand;
+module.exports = GreetGageCommand;

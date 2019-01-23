@@ -5,6 +5,7 @@ bot.registry.registerGroup("simple", "Simple");
 bot.registry.registerGroup("greetings", "Greetings");
 bot.registry.registerGroup("gaming", "Gaming");
 bot.registry.registerGroup("utility", "Utility");
+bot.registry.registerGroup("fun", "Fun");
 //bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + "/commands");
 
