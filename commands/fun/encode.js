@@ -34,26 +34,38 @@ class EncodeCommand extends Commando.Command{
 
         result = expressiveMark + expressiveMark + result;
 
-        for(let i = 0; i < messageContent.length - 1; i++)
+        for(let i = 0; i < messageContent.length; i++)
         {
-            if(messageContent.charAt(i + 1) == ' ' || messageContent.charAt(i) == ' ' || i + 1 == messageContent.length - 1)
+            if(isLetter(messageContent.charAt(i)))
             {
-                result += messageContent.charAt(i) + wordStart;
+                if(messageContent.charAt(i + 1) == ' ')
+                {
+                    result += messageContent.charAt(i) + wordStart;
+                }
+                else 
+                {
+                    result += messageContent.charAt(i);
+
+                    if(i != messageContent.length - 1)
+                    {
+                        result += letterCode;
+                    }
+                }
             }
-            else if(isLetter(messageContent.charAt(i)))
+            else if(messageContent.charAt(i) == " ")
             {
-                result += messageContent.charAt(i) + letterCode;
-            }
-            else
-            {
-                result += messageContent.charAt(i);
+                if(isLetter(messageContent.charAt(i + 1)))
+                {
+                    result += wordStart;
+                }
+                else
+                {
+                    result += messageContent.charAt(i);
+                }
             }
         }
 
-        if(expressiveMark == "")
-        {
-            result += lastChar;
-        }
+        result += wordStart;
 
         result += expressiveMark + expressiveMark;
         message.delete(0);
